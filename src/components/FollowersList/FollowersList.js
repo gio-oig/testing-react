@@ -13,6 +13,7 @@ export default function FollowersList() {
 
   const fetchFollowers = async () => {
     const { data } = await axios.get("https://randomuser.me/api/?results=5");
+    console.log(data);
     setFollowers(data.results);
   };
 
